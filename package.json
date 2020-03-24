@@ -1,6 +1,6 @@
 {
   "name": "draggable-antd-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "基于antd的可拖拽模态框",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

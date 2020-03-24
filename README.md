@@ -1,4 +1,4 @@
-# draggable-antd-modal
+# [draggable-antd-modal](https://www.npmjs.com/package/draggable-antd-modal)
 
 基于antd的可拖拽模态框。
 
@@ -22,7 +22,8 @@ npm install -S draggable-antd-modal
         </DraggableAntdModal>
     ]
 ```
-
+## RUN EFFECT
+![image](https://raw.githubusercontent.com/lth707/draggable-antd-modal/master/run.gif)
 
 ## LICENSE
 
