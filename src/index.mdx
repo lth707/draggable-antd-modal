@@ -1,0 +1,35 @@
+---
+name: draggable-antd-modal
+route: /
+order: -1
+sidebar: true
+---
+
+import { Playground, Props } from 'docz';
+import { Button } from 'antd';
+import 'antd/dist/antd.css';
+import DraggableAntdModal from './DraggableAntdModal';
+
+# Properties
+<Props of={DraggableAntdModal} />
+
+# DraggableAntdModal Component
+<Playground>
+    {()=>{
+        const [visible, setVisible] = React.useState(false);
+        return [
+            <Button type="primary" onClick={()=>{
+               setVisible(true);
+            }}>打开弹窗</Button>,
+            <DraggableAntdModal visible={visible} title="可拖拽弹窗" draggable onCancel={()=>{
+                setVisible(false);
+           }} onOk={()=>{
+                setVisible(false);
+           }}>
+              <div>基于antd的可拖拽弹窗，通过draggable参数控制，其他配置等同<Button type="link" href="https://ant.design/components/modal-cn/" target="_blank" style={{padding:0}}>antd</Button></div>
+           </DraggableAntdModal>
+        ]
+    }}
+</Playground>
+
+
